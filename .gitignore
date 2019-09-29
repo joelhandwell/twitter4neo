@@ -29,3 +29,4 @@ hs_err_pid*
 .idea/*
 build/*
 local.properties
+twitter4j.properties
