@@ -13,9 +13,10 @@ object TwNeoSpec : Spek({
         it("has Twitter4j client") {
             val twNeo = TwNeo()
             val tw = twNeo.twitter
-            val id = tw.id
-            logger.debug(id.toString())
-            assertNotNull(id)
+            val neo4jTimeline = tw.getUserTimeline("neo4j")
+            val text = neo4jTimeline.first().text
+            logger.debug(text)
+            assertNotNull(text)
         }
     }
 })
