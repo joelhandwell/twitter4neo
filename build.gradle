@@ -1,7 +1,7 @@
 buildscript {
-    ext.neo4j_version = '3.5.12'
-    ext.neo4j_ogm_version = '3.2.2'
-    ext.spek_version = '2.0.8'
+    ext.neo4j_version = '3.5.14'
+    ext.neo4j_ogm_version = '3.2.9'
+    ext.spek_version = '2.0.10'
 }
 
 plugins {
@@ -48,9 +48,9 @@ noArg {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "13"
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "13"
 }
